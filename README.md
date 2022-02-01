@@ -1,6 +1,10 @@
 # linkedin-clone-web
 Linked In Clone Web
 
+# supported versions
+node v14+
+
+# setup
 Creating the linkedin appliction via react-chef module, which will create a boiler-plate of the react app:
 Steps:
 1. npm i react-chef 
