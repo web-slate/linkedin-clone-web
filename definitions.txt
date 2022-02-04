@@ -1,0 +1,20 @@
+common/
+  Spinner
+blocks/
+  Header
+    Logo
+    SearchForm
+    MainMenu
+    ProfileMenu
+    WorkMenu
+    SubHeaderAd
+  SideBarLeft
+    ProfileInfo
+    RecentTags
+  SideBarRight
+    RecommendedFeeds
+    ProfileLViewers
+    FooterLinks    
+  content
+    PostItem
+    PostForm
