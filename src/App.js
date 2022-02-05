@@ -6,7 +6,7 @@ import Spinner from './components/common/Spinner/Spinner';
 import Header from './components/blocks/Header';
 import SubHeaderAd from './components/blocks/Header/SubHeaderAd';
 import SideBarLeft from './components/blocks/SideBarLeft';
-import SideBarRight from './components/blocks/SidebarRight';
+import SideBarRight from './components/blocks/SideBarRight';
 import PostItems from './components/blocks/content/PostItem';
 
 
