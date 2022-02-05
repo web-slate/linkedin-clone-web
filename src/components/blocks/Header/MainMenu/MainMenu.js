@@ -1,39 +1,44 @@
-
 import React from 'react'
 import imageSrc from '../../../../static/images/v.jpeg';
+import { useTranslation } from 'react-i18next';
+
+
 
 function MainMenu() {
+
+  const { t } = useTranslation();
+
   return <>
     <nav>
                 <ul>
                     <li>
                         <div id="home" className="selected">
                             <span className="fas fa-home"></span>
-                            <span className="nav-item-text">Home</span>
+                            <span className="nav-item-text">{t('home')}</span>
                         </div>
                     </li>
                     <li>
                         <div>
                             <span className="fas fa-user-friends"></span>
-                            <span className="nav-item-text">My Network</span>
+                            <span className="nav-item-text">{t('network')}</span>
                         </div>
                     </li>
                     <li>
                         <div>
                             <span className="fas fa-suitcase"></span>
-                            <span className="nav-item-text">Jobs</span>
+                            <span className="nav-item-text">{t('jobs')}</span>
                         </div>
                     </li>
                     <li>
                         <div>
                             <span className="fas fa-envelope"></span>
-                            <span className="nav-item-text">Messaging</span>
+                            <span className="nav-item-text">{t('messaging')}</span>
                         </div>
                     </li>
                     <li>
                         <div>
                             <span className="fas fa-bell"></span>
-                            <span className="nav-item-text">Notifications</span>
+                            <span className="nav-item-text">{t('notifications')}</span>
                         </div>
                     </li>
                     <li>
