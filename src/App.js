@@ -117,7 +117,7 @@ function App() {
 
   useEffect(() => {
     waitPageLoading();
-  }, []);
+  }, [waitPageLoading]);
 
   return (
     <>

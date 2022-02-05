@@ -14,7 +14,6 @@ const Header = () => {
                         <SearchForm />
                         <span className="fas fa-comments"></span>
                     </div>
-
                     <MainMenu />
                 </div>
             </header>

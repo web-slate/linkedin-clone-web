@@ -1,6 +1,7 @@
 
 import React from 'react'
 import imageSrc from '../../../../static/images/link-logo.png';
+import profileImg from '../../../../static/images/v.jpeg';
 
 
 
@@ -14,7 +15,7 @@ function Logo() {
       />
       <img
         id="header-picture-menu"
-        src="https://raw.githubusercontent.com/mrmauricio/linkedin-layout-clone/master/images/picture.jpeg"
+        src={profileImg}
         alt="Profile picture"
       />
       <span id="header-picture-menu-bars">
