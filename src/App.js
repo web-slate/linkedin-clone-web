@@ -10,6 +10,7 @@ import SideBarRight from './components/blocks/SidebarRight';
 import PostItems from './components/blocks/content/PostItem';
 
 
+
 function App() {
   function toggleSearchInput() {
     const button = document.getElementById("search-button");
@@ -118,6 +119,8 @@ function App() {
   useEffect(() => {
     waitPageLoading();
   }, [waitPageLoading]);
+
+  
 
   return (
     <>
