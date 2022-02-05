@@ -6,7 +6,7 @@ import Spinner from '@linkedinWeb/components/common/Spinner/Spinner';
 import Header from '@linkedinWeb/components/blocks/Header';
 import SubHeaderAd from '@linkedinWeb/components/blocks/Header/SubHeaderAd';
 import SideBarLeft from '@linkedinWeb/components/blocks/SideBarLeft';
-import SideBarRight from '@linkedinWeb/components/blocks/SidebarRight';
+import SideBarRight from '@linkedinWeb/components/blocks/SideBarRight';
 import PostItems from '@linkedinWeb/components/blocks/content/PostItem';
 
 
