@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/ramsunvtech/linkedin-clone-web/issues"
   },
-  "homepage": "https://github.com/ramsunvtech/linkedin-clone-web#readme",
+  "homepage": "https://ramsunvtech.github.io/linkedin-clone-web",
   "dependencies": {
     "@fe-chef/component": "^0.1.4",
     "prop-types": "^15.8.1",
