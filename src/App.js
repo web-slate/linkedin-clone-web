@@ -8,7 +8,7 @@ import SubHeaderAd from './components/blocks/Header/SubHeaderAd';
 import SideBarLeft from './components/blocks/SideBarLeft';
 import SideBarRight from './components/blocks/SidebarRight';
 import PostItems from './components/blocks/content/PostItem';
-import { useTranslation } from 'react-i18next';
+
 
 
 function App() {
@@ -120,7 +120,7 @@ function App() {
     waitPageLoading();
   }, [waitPageLoading]);
 
-  const { t } = useTranslation();
+  
 
   return (
     <>
