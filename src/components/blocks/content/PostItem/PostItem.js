@@ -2,12 +2,25 @@
 import React from 'react'
 import PostForm from '../PostForm'
 import imageSrc from '../../../../static/images/jp.png';
+import useFetchPosts from '../../../services/hooks/useFetchPosts';
 
 function PostItem() {
+  const { isLoading, serverError, postItems } = useFetchPosts(
+    'https://linkedincloneapp01.herokuapp.com/api/feed'
+  );
+
   return <>
     <div id="main-wrapper">
       <main id="main-section">
         <PostForm></PostForm>
+
+        {isLoading && <span>Loading.....</span>}
+        {!isLoading && serverError ? (
+        <span>Error in fetching data ...</span>
+        ) : (
+        <span>{JSON.stringify(postItems)}</span>
+        )}
+
         <div id="feed-sort">
           <hr />
           <button>
