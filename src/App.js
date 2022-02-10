@@ -120,7 +120,11 @@ function App() {
     waitPageLoading();
   }, [waitPageLoading]);
 
+<<<<<<< HEAD
   
+=======
+  const { t } = useTranslation();
+>>>>>>> b5047e9 (tech(util/base) - Adding localization)
 
   return (
     <>
