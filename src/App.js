@@ -2,12 +2,21 @@ import React, {useEffect} from 'react'
 
 // Components.
 import { ErrorHandler } from '@linkedinWeb/components'
+<<<<<<< HEAD
 import Spinner from '@linkedinWeb/components/common/Spinner/Spinner';
 import Header from '@linkedinWeb/components/blocks/Header';
 import SubHeaderAd from '@linkedinWeb/components/blocks/Header/SubHeaderAd';
 import SideBarLeft from '@linkedinWeb/components/blocks/SideBarLeft';
 import SideBarRight from '@linkedinWeb/components/blocks/SideBarRight';
 import PostItems from '@linkedinWeb/components/blocks/content/PostItem';
+=======
+import Spinner from './components/common/Spinner/Spinner';
+import Header from './components/blocks/Header';
+import SubHeaderAd from './components/blocks/Header/SubHeaderAd';
+import SideBarLeft from './components/blocks/SideBarLeft';
+import SideBarRight from './components/blocks/SidebarRight';
+import PostItems from './components/blocks/content/PostItem';
+>>>>>>> 4691aea (tech(util/base) : Add localization)
 
 
 
@@ -119,12 +128,6 @@ function App() {
   useEffect(() => {
     waitPageLoading();
   }, [waitPageLoading]);
-
-<<<<<<< HEAD
-  
-=======
-  const { t } = useTranslation();
->>>>>>> b5047e9 (tech(util/base) - Adding localization)
 
   return (
     <>
