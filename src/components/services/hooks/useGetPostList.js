@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const useFetchPosts = (url) => {
+const useGetPostList = (url) => {
     const [isLoading, setIsLoading] = useState(false);
     const [postItems, setPostItems] = useState(null);
     const [serverError, setServerError] = useState(null);
@@ -12,11 +12,10 @@ const useFetchPosts = (url) => {
         try {
           const resp = await axios.get(url);
           const data = await resp?.data;
-  
           setPostItems(data);
           setIsLoading(false);
         } catch (error) {
-          setServerError(error);
+          setServerError(true);
           setIsLoading(false);
         }
       };
@@ -27,4 +26,4 @@ const useFetchPosts = (url) => {
     return { isLoading, postItems, serverError };
   };
 
-  export default useFetchPosts;
+  export default useGetPostList;
