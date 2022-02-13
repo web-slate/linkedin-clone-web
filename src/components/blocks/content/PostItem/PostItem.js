@@ -1,13 +1,54 @@
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import PostForm from '../PostForm'
 import imageSrc from '../../../../static/images/jp.png';
+import useGetPostList from '../../../services/hooks/useGetPostList';
+import { FetchView } from "react-camouflage";
 
 function PostItem() {
+
+  const { isLoading, serverError, postItems } = useGetPostList(
+    'https://linkedincloneapp01.herokuapp.com/api/feed'
+  );
+  const [postListStatusMapping, setPostListStatusMapping] = useState({
+    success: false,
+    error: false,
+    loading: true
+  });
+
+
+  useEffect(() => {
+    setPostListStatusMapping({
+      success: postItems,
+      error: serverError,
+      loading: isLoading
+    });
+  }, [postListStatusMapping]);
+
+
+
+
   return <>
     <div id="main-wrapper">
       <main id="main-section">
         <PostForm></PostForm>
+
+        <FetchView statusMapping={postListStatusMapping}>
+
+          <FetchView.Fetching>
+            <div>Loading...</div>
+          </FetchView.Fetching>
+
+          <FetchView.Fetched>
+            <span>{JSON.stringify(postItems)}</span>
+          </FetchView.Fetched>
+
+          <FetchView.Error>
+            <div>sorry error message</div>
+          </FetchView.Error>
+
+        </FetchView>
+
         <div id="feed-sort">
           <hr />
           <button>
@@ -128,7 +169,7 @@ function PostItem() {
           </div>
           <div id="post-data">
             <p>
-            According to the report, the continued political instability caused the forecast for the investment segment in 2022 to be sluggish. Sluggish recovery is also expected for the retail and office sectors, leaving only the residential market for bright recovery thanks to the property-related incentives under Budget 2022.
+              According to the report, the continued political instability caused the forecast for the investment segment in 2022 to be sluggish. Sluggish recovery is also expected for the retail and office sectors, leaving only the residential market for bright recovery thanks to the property-related incentives under Budget 2022.
             </p>
             <p id="post-translation">
               <button>See translation</button>

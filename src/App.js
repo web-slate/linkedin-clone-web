@@ -120,8 +120,6 @@ function App() {
     waitPageLoading();
   }, [waitPageLoading]);
 
-  
-
   return (
     <>
 
