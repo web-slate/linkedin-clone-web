@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfileInfo from './RecommendedFeeds';
+import ProfileLViewers from './ProfileLViewers/ProfileLViewers';
 
 const SideBarRight = () => {
     return (
@@ -62,7 +62,7 @@ const SideBarRight = () => {
                         <a href="#">View all recommendations</a>
                     </div>
                 </div>
-                <ProfileInfo></ProfileInfo>
+                <ProfileLViewers/>
 
             </aside>
         </>
