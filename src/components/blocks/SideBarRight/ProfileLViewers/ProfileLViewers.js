@@ -1,6 +1,6 @@
 
 import React from 'react'
-
+import FooterLinks from '../FooterLinks/FooterLinks'
 
 function ProfileLViewers() {
   return (
@@ -12,11 +12,6 @@ function ProfileLViewers() {
             <span>Linkedin Premium</span>
             <div>
               <img src="https://avatars.githubusercontent.com/u/3478542?v=4" alt="" />
-              <img
-                id="linkedin-key"
-                src="https://avatars.githubusercontent.com/u/3478542?v=4"
-                alt=""
-              />
             </div>
             <strong>
               See who's viewed your profile in the last 90
@@ -27,7 +22,7 @@ function ProfileLViewers() {
             </div>
           </a>
         </section>
-        <FooterLinks></FooterLinks>
+        <FooterLinks/>
       </div>
     </>
   )
