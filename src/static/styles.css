@@ -99,7 +99,7 @@ header#main-header > div div input {
     max-width: 280px;
     flex: 1;
     color: rgba(40, 62, 74, 0.75);
-    padding-left: 10px;
+    padding-left: 30px;
 }
 
 header#main-header > div > div div {
