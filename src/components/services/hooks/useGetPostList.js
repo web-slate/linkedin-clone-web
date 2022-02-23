@@ -22,7 +22,7 @@ const useGetPostList = () => {
       };
   
       fetchData();
-    }, [url]);
+    }, []);
   
     return { isLoading, postItems, serverError };
   };
