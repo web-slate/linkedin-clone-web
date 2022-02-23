@@ -4,11 +4,9 @@ import PostForm from '../PostForm'
 import imageSrc from '../../../../static/images/jp.png';
 import useGetPostList from '../../../services/hooks/useGetPostList';
 import { FetchView } from "react-camouflage";
-import { APP_CONSTANTS } from '../../../common/constants';
 
 function PostItem() {
-console.log("dfgg",APP_CONSTANTS.API_URL.GET_POST_URL);
-  const { isLoading, serverError, postItems } = useGetPostList(APP_CONSTANTS);
+  const { isLoading, serverError, postItems } = useGetPostList();
   const [postListStatusMapping, setPostListStatusMapping] = useState({
     success: false,
     error: false,
