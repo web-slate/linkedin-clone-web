@@ -1,18 +1,17 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
+import AxiosInstance from '../../../utils/axios-instance'
+import { USER_FEED_URL } from '../../../utils/api-endpoints'
 
 const useGetPostList = () => {
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
     const [postItems, setPostItems] = useState(null);
     const [serverError, setServerError] = useState(null);
   
     useEffect(() => {
-      setIsLoading(true);
       const fetchData = async () => {
         try {
-          const apiUrl = 'https://linkedincloneapp01.herokuapp.com/api/feed?userId=2'
-          const resp = await axios.get(apiUrl);
-          const data = await resp?.data;
+          const resp = await AxiosInstance.get(USER_FEED_URL);
+          const data = resp?.data;
           setPostItems(data);
           setIsLoading(false);
         } catch (error) {
