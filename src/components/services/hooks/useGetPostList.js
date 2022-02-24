@@ -10,7 +10,7 @@ const useGetPostList = () => {
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const resp = await AxiosInstance.get(USER_FEED_URL);
+          const resp = await AxiosInstance.get('/todos/1');
           const data = resp?.data;
           setPostItems(data);
           setIsLoading(false);
