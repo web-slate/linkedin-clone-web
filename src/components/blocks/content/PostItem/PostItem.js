@@ -7,23 +7,11 @@ import { FetchView } from "react-camouflage";
 
 function PostItem() {
   const { isLoading, serverError, postItems } = useGetPostList();
-  const [postListStatusMapping, setPostListStatusMapping] = useState({
-    success: false,
-    error: false,
-    loading: true
-  });
-
-
-  useEffect(() => {
-    setPostListStatusMapping({
-      success: postItems,
-      error: serverError,
-      loading: isLoading
-    });
-  }, [postListStatusMapping]);
-
-
-
+  const postListStatusMapping =  {
+    success: postItems,
+    error: serverError,
+    loading: isLoading
+  };
 
   return <>
     <div id="main-wrapper">
