@@ -1,7 +1,6 @@
 
-import React, { useEffect, useState, useRef } from 'react'
+import React from 'react'
 import PostForm from '../PostForm'
-import imageSrc from '../../../../static/images/jp.png';
 import useGetPostList from '../../../services/hooks/useGetPostList';
 import { FetchView } from "react-camouflage";
 import PostAuthourInfo from './postAuthorInfo';
@@ -15,8 +14,7 @@ function PostItem() {
     error: serverError,
     loading: isLoading
   };
-  const renderCounter = useRef(0);
-  renderCounter.current = renderCounter.current + 1;
+ 
 
   return <>
 
@@ -51,7 +49,6 @@ function PostItem() {
 
         {/* Can be implemented on map for listing the post items */}
         <article>
-          {renderCounter.current}
           <PostAuthourInfo />
           <PostContent />
           <PostInteractions />
