@@ -1,0 +1,12 @@
+header#main-header>div>div>img#header-logo {
+  width: 38px;
+  height: 38px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  header#main-header>div>div>img#header-logo {
+    display: none;
+  }
+}
