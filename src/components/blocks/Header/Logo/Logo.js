@@ -2,8 +2,7 @@
 import React from 'react'
 import imageSrc from '../../../../static/images/link-logo.png';
 import profileImg from '../../../../static/images/v.jpeg';
-
-
+import './Logo.css'; 
 
 function Logo() {
   return <>
