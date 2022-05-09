@@ -15,4 +15,4 @@ Creating the linkedin appliction via react-chef module, which will create a boil
 
  **Docs**:
 
-[Profile Readme](/blob/master/PROFILE.md)
+[Profile Readme](PROFILE.md)
