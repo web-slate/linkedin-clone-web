@@ -14,5 +14,5 @@ Creating the linkedin appliction via react-chef module, which will create a boil
 4. npm run dev
 
  **Docs**:
- 
-[Profile Readme](../blob/master/PROFILE.md)
+
+[Profile Readme](/blob/master/PROFILE.md)
