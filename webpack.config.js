@@ -49,6 +49,7 @@ module.exports = {
         "src",
         "components"
       ),
+      "@linkedinWeb/utils": path.resolve(__dirname, "src", "utils"),
     },
   },
   output: {
