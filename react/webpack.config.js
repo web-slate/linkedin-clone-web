@@ -1,11 +1,11 @@
 
 const webpack = require("webpack");
 const path = require("path");
-const PACKAGE = require("./package.json");
 
 // WebPack Plugins.
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const PACKAGE = require("./package.json");
 
 module.exports = {
   entry: "./src/index.js",
@@ -18,8 +18,11 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
-      },
+        use: [
+          "style-loader",
+          "css-loader"
+        ],
+      },    
       {
         test: /.svg$/,
         use: ["@svgr/webpack", "file-loader"],
@@ -53,8 +56,9 @@ module.exports = {
     },
   },
   output: {
-    path: path.resolve(__dirname, "public"),
-    filename: "linkedinWeb.js",
+    path: path.resolve(__dirname, "../public"),
+    publicPath: '/',
+    filename: "linkedin-clone-web.js",
     chunkFilename: "[name].js",
   },
   plugins: [
@@ -68,7 +72,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       template: path.resolve(__dirname, "src/static/index.html"),
-      APP_ROOT_ID: 'linkedinWeb',
+      APP_ROOT_ID: 'linkedin-clone-web',
       APP_VERSION: PACKAGE.version
     }),
 
@@ -76,7 +80,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: "./src/static/images", to: "images" },
-        { from: "./src/static/styles.css", to: "." },
+        { from: "./src/static/styles.css", to: "styles.css" },
       ],
     }),
   ],
@@ -87,7 +91,7 @@ module.exports = {
       directory: "./src/static",
     },
     hot: true,
-    port: 7000,
+    port: 3000,
     proxy: {
       "/api": "http://YOUR_API_URL:9000",
     },
