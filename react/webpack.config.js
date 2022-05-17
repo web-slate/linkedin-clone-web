@@ -7,6 +7,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const PACKAGE = require("./package.json");
 
+const isProduction =
+  process.argv[process.argv.indexOf('--mode') + 1] === 'production'
+const appRelativePath = '/linkedin-clone-web/react'
+
 module.exports = {
   entry: "./src/index.js",
   module: {
@@ -57,7 +61,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "../public"),
-    publicPath: '/',
+    publicPath: isProduction ? appRelativePath : '/',
     filename: "linkedin-clone-web.js",
     chunkFilename: "[name].js",
   },
