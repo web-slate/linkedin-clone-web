@@ -7,4 +7,4 @@ import App from './App';
 
 
 
-ReactDOM.render(<App />, document.getElementById('linkedinWeb'))
+ReactDOM.render(<App />, document.getElementById('linkedin-clone-web'))

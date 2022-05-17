@@ -12,7 +12,7 @@ const browserHistory = createBrowserHistory()
 function App() {
   return (
       <ErrorHandler>
-        <Router history={browserHistory}>
+        <Router history={browserHistory} basename="/linkedin-clone-web/react">
           <Routes />
         </Router>
       </ErrorHandler>
