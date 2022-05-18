@@ -61,7 +61,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "../public"),
-    publicPath: isProduction ? appRelativePath : '/',
+    publicPath: !isProduction ? '/' : '',
     filename: "linkedin-clone-web.js",
     chunkFilename: "[name].js",
   },
@@ -89,7 +89,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    open: true,
+    open: [appRelativePath],
     historyApiFallback: true,
     static: {
       directory: "./src/static",
