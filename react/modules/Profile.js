@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklinkedin_clone_web=self.webpackChunklinkedin_clone_web||[]).push([[880],{2874:(e,l,n)=>{n.r(l),n.d(l,{default:()=>c});var t=n(7294);const c=()=>t.createElement("section",null,t.createElement("div",null,t.createElement("span",null),t.createElement("h1",null,"Profile Page here")))}}]);
