@@ -12,7 +12,7 @@ function MainMenu() {
     <nav>
       <ul>
         <li>
-          <div id="home" className="selected">
+          <div id="home" className="selected" onClick={() => navigate(RoutePaths.Home)}>
             <span className="fas fa-home"></span>
             <span className="nav-item-text">{t('home')}</span>
           </div>
