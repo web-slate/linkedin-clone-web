@@ -1,16 +1,18 @@
 import React from 'react'
-import ProfileIntro from '@linkedinWeb/components/blocks/Profile/ProfileIntro';
+
+// Layout
+import MainLayout from '@linkedinWeb/components/layouts/MainLayout'
+
+// Components
+import ProfileIntro from '@linkedinWeb/components/blocks/Profile/ProfileIntro'
 
 const Profile = () => {
-
   return (
-    <section>
-      <div>
-        <span></span>
-        <h1>Profile Page here</h1>
+    <MainLayout>
+      <div id="profile-container">
         <ProfileIntro />
       </div>
-    </section>
+    </MainLayout>
   )
 }
 
