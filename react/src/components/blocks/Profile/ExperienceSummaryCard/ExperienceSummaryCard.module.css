@@ -1,5 +1,23 @@
 
   /* TODO: Component CSS Style goes here */
-  .line {
-    color: blue;
-  }
+article{
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 2px 3px rgb(0 0 0 / 20%);
+  border-radius: 6px;
+  width: 803px;
+}
+
+.expHeader{
+  margin: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.expPlus{
+  margin-left: 32rem;
+}
