@@ -1,12 +1,35 @@
-import React from 'react'
-import styles from './InputText.module.css'
+import React, { useState, forwardRef } from 'react'
 
-function InputText() {
-  return (
-    <>
-      <p className={styles.line}>InputText goes here.</p>
-    </>
-  )
-}
+const noop = () => {}
+
+const InputText = forwardRef(
+  (
+    {
+      name,
+      initialValue = '',
+      placeholder,
+      handleChange,
+      onChange = noop,
+      onBlur = noop,
+      ...props
+    },
+    ref
+  ) => {
+    return (
+      <div>
+        <input
+          name={name}
+          type="text"
+          placeholder={placeholder}
+          defaultValue={initialValue}
+          onChange={onChange}
+          onBlur={onBlur}
+          ref={ref}
+          {...props}
+        />
+      </div>
+    )
+  }
+)
 
 export default InputText
