@@ -1,29 +1,29 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react'
 import AxiosInstance from '../../../utils/axios-instance'
 import { USER_FEED_URL } from '../../../utils/api-endpoints'
 
 const useGetPostList = () => {
-    const [isLoading, setIsLoading] = useState(true);
-    const [postItems, setPostItems] = useState(null);
-    const [serverError, setServerError] = useState(null);
+  const [isLoading, setIsLoading] = useState(true)
+  const [postItems, setPostItems] = useState(null)
+  const [serverError, setServerError] = useState(null)
   
-    useEffect(() => {
-      const fetchData = async () => {
-        try {
-          const resp = await AxiosInstance.get(USER_FEED_URL);
-          const data = resp?.data;
-          setPostItems(data);
-          setIsLoading(false);
-        } catch (error) {
-          setServerError(true);
-          setIsLoading(false);
-        }
-      };
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const resp = await AxiosInstance.get(USER_FEED_URL)
+        const data = resp?.data
+        setPostItems(data)
+        setIsLoading(false)
+      } catch (error) {
+        setServerError(true)
+        setIsLoading(false)
+      }
+    }
   
-      fetchData();
-    }, []);
+    fetchData()
+  }, [])
   
-    return { isLoading, postItems, serverError };
-  };
+  return { isLoading, postItems, serverError }
+}
 
-  export default useGetPostList;
+export default useGetPostList

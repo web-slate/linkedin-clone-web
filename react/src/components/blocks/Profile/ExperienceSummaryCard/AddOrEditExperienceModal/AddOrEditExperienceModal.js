@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react'
 import { Modal, InputText, Switch }  from '../../../../ui'
-import { useForm } from "react-hook-form";
-import styles from "./AddOrEditExperienceModal.module.css";
+import { useForm } from 'react-hook-form'
+import styles from './AddOrEditExperienceModal.module.css'
 
 function AddOrEditExperienceModal({ show, handleModalClose }) {
-  const { register, handleSubmit, formState, reset } = useForm();
+  const { register, handleSubmit, formState, reset } = useForm()
   
   const handleCreateChannelFormSubmit = async (data) => {
-    data.organization_id = organizationId;
+    data.organization_id = organizationId
 
-    reset();
-  };
+    reset()
+  }
 
   return (
     <>
@@ -26,10 +26,10 @@ function AddOrEditExperienceModal({ show, handleModalClose }) {
                  Title
               </label>
               <InputText
-                {...register("title", {
+                {...register('title', {
                   required: true,
                   maxLength: 80,
-                  value: "",
+                  value: '',
                 })}
                 className={styles.textField}
                 placeholder="title"
@@ -46,10 +46,10 @@ function AddOrEditExperienceModal({ show, handleModalClose }) {
                  Employment Type
               </label>
               <InputText
-                {...register("employment_type", {
+                {...register('employment_type', {
                   required: true,
                   maxLength: 80,
-                  value: "",
+                  value: '',
                 })}
                 className={styles.textField}
                 placeholder="employmenttype"
@@ -66,10 +66,10 @@ function AddOrEditExperienceModal({ show, handleModalClose }) {
                  Company Name
               </label>
               <InputText
-                {...register("company_name", {
+                {...register('company_name', {
                   required: true,
                   maxLength: 80,
-                  value: "",
+                  value: '',
                 })}
                 className={styles.textField}
                 placeholder="Company Name"
@@ -86,10 +86,10 @@ function AddOrEditExperienceModal({ show, handleModalClose }) {
                  Location
               </label>
               <InputText
-                {...register("Location", {
+                {...register('Location', {
                   required: true,
                   maxLength: 80,
-                  value: "",
+                  value: '',
                 })}
                 className={styles.textField}
                 placeholder="Location"
@@ -106,10 +106,10 @@ function AddOrEditExperienceModal({ show, handleModalClose }) {
                  Description
               </label>
               <InputText
-                {...register("description", {
+                {...register('description', {
                   required: true,
                   maxLength: 80,
-                  value: "",
+                  value: '',
                 })}
                 className={styles.textField}
                 placeholder="Description"
@@ -129,7 +129,7 @@ function AddOrEditExperienceModal({ show, handleModalClose }) {
         </div>
       </Modal>
     </>
-  );
+  )
 }
 
-export default AddOrEditExperienceModal;
+export default AddOrEditExperienceModal
