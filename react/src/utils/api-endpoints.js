@@ -1,1 +1,1 @@
-export const USER_FEED_URL = '/feed?userId=2';
+export const USER_FEED_URL = '/feed?userId=2'

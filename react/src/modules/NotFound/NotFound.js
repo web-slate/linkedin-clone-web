@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import RoutePaths from '@linkedinWeb/utils/route-paths'
 
 const NotFound = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   return (
     <section>

@@ -12,23 +12,23 @@ function Modal({ children, title, show, handleModalClose }) {
 
   return show
     ? createPortal(
-        <>
-          <div id="modal" className={styles.modal}>
-            <div className={styles.modalContainer}>
-              <div className={styles.modalHeader}>
-                <h2>{title}</h2>
-                <span onClick={() => handleModalClose(false)}>
-                  <FontAwesomeIcon size="lg" icon={faXmark} />
-                </span>
-              </div>
-              <div className={styles.modalBody}>
-                <div className={styles.modalContent}>{children}</div>
-              </div>
+      <>
+        <div id="modal" className={styles.modal}>
+          <div className={styles.modalContainer}>
+            <div className={styles.modalHeader}>
+              <h2>{title}</h2>
+              <span onClick={() => handleModalClose(false)}>
+                <FontAwesomeIcon size="lg" icon={faXmark} />
+              </span>
+            </div>
+            <div className={styles.modalBody}>
+              <div className={styles.modalContent}>{children}</div>
             </div>
           </div>
-        </>,
-        document.body
-      )
+        </div>
+      </>,
+      document.body
+    )
     : null
 }
 

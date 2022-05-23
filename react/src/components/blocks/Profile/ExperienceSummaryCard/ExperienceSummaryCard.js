@@ -1,8 +1,8 @@
-import React, {useState} from "react";
-import styles from "./ExperienceSummaryCard.module.css";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import AddOrEditExperienceModal from "./AddOrEditExperienceModal/AddOrEditExperienceModal";
+import React, {useState} from 'react'
+import styles from './ExperienceSummaryCard.module.css'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import AddOrEditExperienceModal from './AddOrEditExperienceModal/AddOrEditExperienceModal'
 
 function ExperienceSummaryCard() {
   const [showModal, setShowModal] = useState(false)
@@ -18,19 +18,19 @@ function ExperienceSummaryCard() {
   return (
     <>
       <article>
-        <div class={styles.expHeader}>
+        <div className={styles.expHeader}>
           <h2>Experience</h2>
           <span className={styles.expPlus} onClick={expAddHandler}>
             <FontAwesomeIcon icon={faPlus} />
           </span>
         </div>
         <AddOrEditExperienceModal
-              show={showModal}
-              handleModalClose={handleModalClose}
-            />
+          show={showModal}
+          handleModalClose={handleModalClose}
+        />
       </article>
     </>
-  );
+  )
 }
 
-export default ExperienceSummaryCard;
+export default ExperienceSummaryCard

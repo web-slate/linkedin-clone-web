@@ -1,19 +1,19 @@
 
 import React from 'react'
 import PostForm from '../PostForm'
-import useGetPostList from '../../../services/hooks/useGetPostList';
-import { FetchView } from "react-camouflage";
-import PostAuthourInfo from './postAuthorInfo';
-import PostContent from './postContent';
-import PostInteractions from './postInteractions';
+import useGetPostList from '../../../services/hooks/useGetPostList'
+import { FetchView } from 'react-camouflage'
+import PostAuthourInfo from './postAuthorInfo'
+import PostContent from './postContent'
+import PostInteractions from './postInteractions'
 
 function PostItem() {
-  const { isLoading, serverError, postItems } = useGetPostList();
+  const { isLoading, serverError, postItems } = useGetPostList()
   const postListStatusMapping = {
     success: postItems,
     error: serverError,
     loading: isLoading
-  };
+  }
  
 
   return <>
