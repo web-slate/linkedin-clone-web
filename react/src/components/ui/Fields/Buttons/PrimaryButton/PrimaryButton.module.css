@@ -1,5 +1,16 @@
+.submitButton {
+  background-color: #0a66c2;
+  border: none;
+  color: #ffffff;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bolder;
+  border-radius: 10px;
+}
 
-  /* TODO: Component CSS Style goes here */
-  .line {
-    color: blue;
-  }
+
+.submitButton:hover {
+  background-color: #378fe9;
+}

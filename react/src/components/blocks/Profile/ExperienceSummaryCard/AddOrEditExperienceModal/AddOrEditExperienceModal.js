@@ -2,13 +2,12 @@ import React from "react";
 import { Modal, InputText, Switch }  from '../../../../ui'
 import { useForm } from "react-hook-form";
 import styles from "./AddOrEditExperienceModal.module.css";
+import { PrimaryButton, InputSelectDuration } from "../../../../ui/Fields";
 
 function AddOrEditExperienceModal({ show, handleModalClose }) {
   const { register, handleSubmit, formState, reset } = useForm();
   
   const handleCreateChannelFormSubmit = async (data) => {
-    data.organization_id = organizationId;
-
     reset();
   };
 
@@ -21,6 +20,9 @@ function AddOrEditExperienceModal({ show, handleModalClose }) {
       >
         <div className={styles.formBlock}>
           <form onSubmit={handleSubmit(handleCreateChannelFormSubmit)}>
+            {/* <span className={styles.createModalRight}>
+                <Switch {...register('is_private')} />
+              </span> */}
             <div className={styles.formContainer}>
               <label className={styles.label}>
                  Title
@@ -83,6 +85,20 @@ function AddOrEditExperienceModal({ show, handleModalClose }) {
             
             <div className={styles.formContainer}>
               <label className={styles.label}>
+                 Start date
+              </label>
+             <InputSelectDuration />
+            </div>       
+            
+            <div className={styles.formContainer}>
+              <label className={styles.label}>
+                 End date
+              </label>
+             <InputSelectDuration />
+            </div> 
+
+            <div className={styles.formContainer}>
+              <label className={styles.label}>
                  Location
               </label>
               <InputText
@@ -124,7 +140,9 @@ function AddOrEditExperienceModal({ show, handleModalClose }) {
             <div
               className={`${styles.formContainer} ${styles.createModalRight}`}
             >
+               <PrimaryButton>Save</PrimaryButton>
             </div>
+           
           </form>
         </div>
       </Modal>

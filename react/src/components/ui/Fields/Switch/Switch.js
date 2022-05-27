@@ -5,7 +5,7 @@ const Switch = forwardRef((props, ref) => {
   const handleChange = () => {}
   return (
     <>
-      <div className={styles.switchConatiner}>
+      <div className={styles.switchContainer}>
         <input
           onChange={handleChange}
           type="checkbox"
