@@ -1,0 +1,12 @@
+
+  /* TODO: Component CSS Style goes here */
+  
+ .duration {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ } 
+
+ .w100 {
+  width: 100%;
+ }
