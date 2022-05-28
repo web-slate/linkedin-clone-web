@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, InputText, Switch }  from '../../../../ui'
+import { Modal, InputText, Switch, InputTextarea }  from '../../../../ui'
 import { useForm } from "react-hook-form";
 import styles from "./AddOrEditExperienceModal.module.css";
 import { PrimaryButton, InputSelectDuration } from "../../../../ui/Fields";
@@ -121,7 +121,7 @@ function AddOrEditExperienceModal({ show, handleModalClose }) {
               <label className={styles.label}>
                  Description
               </label>
-              <InputText
+              <InputTextarea
                 {...register("description", {
                   required: true,
                   maxLength: 80,

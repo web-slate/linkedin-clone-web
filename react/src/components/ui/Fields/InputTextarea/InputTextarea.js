@@ -1,12 +1,34 @@
-import React from 'react'
-import styles from './InputTextarea.module.css'
+import React, { useState, forwardRef } from 'react'
 
-function InputTextarea() {
-  return (
-    <>
-      <p className={styles.line}>InputTextarea goes here.</p>
-    </>
-  )
-}
+const noop = () => {}
+
+const InputTextarea = forwardRef(
+  (
+    {
+      name,
+      initialValue = '',
+      placeholder,
+      handleChange,
+      onChange = noop,
+      onBlur = noop,
+      ...props
+    },
+    ref
+  ) => {
+    return (
+      <div>
+        <textarea
+          name={name}
+          placeholder={placeholder}
+          defaultValue={initialValue}
+          onChange={onChange}
+          onBlur={onBlur}
+          ref={ref}
+          {...props}
+        />
+      </div>
+    )
+  }
+)
 
 export default InputTextarea

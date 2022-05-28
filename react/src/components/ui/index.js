@@ -1,3 +1,3 @@
-export { InputText, Switch } from './Fields'
+export { InputText, Switch, InputTextarea } from './Fields'
 export { Modal } from './Modal'
 
