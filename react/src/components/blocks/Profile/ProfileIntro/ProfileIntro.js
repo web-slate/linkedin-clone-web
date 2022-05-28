@@ -1,11 +1,16 @@
 import React from 'react'
 import styles from './ProfileIntro.module.css'
+import ProfileBanner from './ProfileBanner'
+import ProfileImage from './ProfileImage'
+import ProfileSummaryCard from './ProfileSummaryCard'
 
 function ProfileIntro() {
   return (
-    <>
-      <p className={styles.line}>ProfileIntro goes here.</p>
-    </>
+    <section className={styles.profileIntroContainer}>
+      <ProfileBanner />
+      <ProfileImage />
+      <ProfileSummaryCard />
+    </section>
   )
 }
 

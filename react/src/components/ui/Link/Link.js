@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './Link.module.css'
 
-function Link() {
+function Link({ href='', children, onClick, className='' }) {
   return (
-    <>
-      <p className={styles.line}>Link goes here.</p>
-    </>
+    <a href={href} onClick={onClick} className={`${styles.link} ${className}`}>
+      {children}
+    </a>
   )
 }
 

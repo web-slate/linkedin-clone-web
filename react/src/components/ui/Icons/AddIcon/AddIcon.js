@@ -1,11 +1,11 @@
 import React from 'react'
-import styles from './AddIcon.module.css'
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styes from './AddIcon.module.css'
 
-function AddIcon() {
+function AddIcon(props) {
   return (
-    <>
-      <p className={styles.line}>AddIcon goes here.</p>
-    </>
+    <FontAwesomeIcon icon={faPlus} className={styes.icon} { ...props }/>
   )
 }
 

@@ -1,5 +1,6 @@
-
-  /* TODO: Component CSS Style goes here */
-  .line {
-    color: blue;
-  }
+.profileIntroContainer{
+  background: #fff;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 2px 3px rgb(0 0 0 / 20%);
+  border-radius: 6px;
+  width: 803px;
+}

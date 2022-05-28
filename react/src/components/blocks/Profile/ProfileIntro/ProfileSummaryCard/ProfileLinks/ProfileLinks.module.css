@@ -1,5 +1,7 @@
+.profileLinksContainer {
+    margin-top: 12px;
+  }
 
-  /* TODO: Component CSS Style goes here */
-  .line {
-    color: blue;
+  .profileLinksContainer button{
+    margin-right: 8px;
   }

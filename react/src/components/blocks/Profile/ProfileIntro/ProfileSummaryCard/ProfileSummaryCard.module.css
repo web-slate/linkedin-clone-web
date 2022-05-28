@@ -1,5 +1,8 @@
 
-  /* TODO: Component CSS Style goes here */
-  .line {
-    color: blue;
-  }
+.summaryCard{
+  box-shadow: none !important;
+  margin-top: -42px;
+}
+.detailsContainer{
+  display: flex;
+}

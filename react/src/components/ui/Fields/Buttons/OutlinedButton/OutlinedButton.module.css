@@ -1,5 +1,10 @@
 
-  /* TODO: Component CSS Style goes here */
-  .line {
-    color: blue;
-  }
+.button{
+  border-radius: 1.6rem;
+  font-size: 1rem;
+  padding: 0.3rem 1.2rem;
+  background-color: #fff;
+  color: #0a66c2;
+  border: 1px solid #0a66c2;
+  font-weight: bold;
+}

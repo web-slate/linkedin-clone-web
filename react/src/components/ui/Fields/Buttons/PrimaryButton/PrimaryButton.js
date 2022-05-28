@@ -1,14 +1,10 @@
 import React from 'react'
 import styles from './PrimaryButton.module.css'
 
-function PrimaryButton({ children, handleOnclick }) {
+function PrimaryButton({ children, type='button', onClick, disabled=false, buttonClassName=''}) {
   return (
-    <button
-      type="submit"
-      onClick={handleOnclick}
-      className={styles.submitButton}
-    >
-      {children}
+    <button type={type} onClick={onClick} disabled={disabled} className={`${styles.button} ${buttonClassName}`}>
+       {children}
     </button>
   )
 }

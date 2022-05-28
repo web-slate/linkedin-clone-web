@@ -1,5 +1,10 @@
 
-  /* TODO: Component CSS Style goes here */
-  .line {
-    color: blue;
+  .itemContainer {
+    display: flex;
+  }
+  .itemContainer img{
+    margin-right: 0.8rem;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 6px;
   }

@@ -1,11 +1,26 @@
 import React from 'react'
 import styles from './ProfileSummaryCard.module.css'
+import SummaryCard from '@linkedinWeb/components/ui/Cards/SummaryCard/SummaryCard'
+import ProfileDetails from './ProfileDetails'
+import ProfileLinks from './ProfileLinks'
+import CompanyAndEductionLinks from './CompanyAndEducationLinks'
+import EditIcon from '@linkedinWeb/components/ui/Icons/EditIcon'
 
 function ProfileSummaryCard() {
+
+  const actions = [{
+    icon: 'editIcon',
+    onClick: () => { alert('open edit modal'); }
+  }]
+
   return (
-    <>
-      <p className={styles.line}>ProfileSummaryCard goes here.</p>
-    </>
+    <SummaryCard title="" containerClassName={styles.summaryCard} actions={actions}>
+      <div className={styles.detailsContainer}>
+        <ProfileDetails />
+        <CompanyAndEductionLinks />
+      </div>
+      <ProfileLinks />
+    </SummaryCard>
   )
 }
 
