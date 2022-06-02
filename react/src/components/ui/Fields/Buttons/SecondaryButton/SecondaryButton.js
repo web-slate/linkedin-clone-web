@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './SecondaryButton.module.css'
 
-function SecondaryButton() {
+function SecondaryButton({ children, type='button', onClick, disabled=false, buttonClassName=''}) {
   return (
-    <>
-      <p className={styles.line}>SecondaryButton goes here.</p>
-    </>
+    <button type={type} onClick={onClick} disabled={disabled} className={`${styles.button} ${buttonClassName}`}>
+       {children}
+    </button>
   )
 }
 

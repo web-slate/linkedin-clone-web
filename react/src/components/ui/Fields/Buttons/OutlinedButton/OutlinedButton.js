@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './OutlinedButton.module.css'
 
-function OutlinedButton() {
+function OutlinedButton({ children, type='button', onClick, disabled=false, buttonClassName=''}) {
   return (
-    <>
-      <p className={styles.line}>OutlinedButton goes here.</p>
-    </>
+    <button type={type} onClick={onClick} disabled={disabled} className={`${styles.button} ${buttonClassName}`}>
+       {children}
+    </button>
   )
 }
 

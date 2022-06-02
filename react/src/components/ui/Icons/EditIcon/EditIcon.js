@@ -1,11 +1,11 @@
 import React from 'react'
-import styles from './EditIcon.module.css'
+import { faPencil } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styes from './EditIcon.module.css'
 
-function EditIcon() {
+function EditIcon(props) {
   return (
-    <>
-      <p className={styles.line}>EditIcon goes here.</p>
-    </>
+    <FontAwesomeIcon icon={faPencil} className={styes.icon} { ...props }/>
   )
 }
 

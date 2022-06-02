@@ -1,16 +1,13 @@
-.submitButton {
-  background-color: #0a66c2;
-  border: none;
-  color: #ffffff;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-  font-weight: bolder;
-  border-radius: 10px;
+.button{
+    border-radius: 1.6rem;
+    font-size: 1rem;
+    padding: 0.3rem 1.2rem;
+    background-color: #0a66c2;
+    color: #fff;
+    border: none;
+    font-weight: bold;
 }
 
-
-.submitButton:hover {
-  background-color: #378fe9;
+.button:hover{
+    background: #378fe9;
 }

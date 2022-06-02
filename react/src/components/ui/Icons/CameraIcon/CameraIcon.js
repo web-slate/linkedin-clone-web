@@ -1,11 +1,11 @@
 import React from 'react'
-import styles from './CameraIcon.module.css'
+import { faCamera } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styes from './CameraIcon.module.css'
 
-function CameraIcon() {
+function CameraIcon(props) {
   return (
-    <>
-      <p className={styles.line}>CameraIcon goes here.</p>
-    </>
+    <FontAwesomeIcon icon={faCamera} className={styes.icon} { ...props }/>
   )
 }
 

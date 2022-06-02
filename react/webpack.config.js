@@ -42,7 +42,6 @@ module.exports = {
         __dirname,
         'src',
         'static',
-        'assets',
         'images'
       ),
       '@linkedinWeb/components': path.resolve(__dirname, 'src', 'components'),
