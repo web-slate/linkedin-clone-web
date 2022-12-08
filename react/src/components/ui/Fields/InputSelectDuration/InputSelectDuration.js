@@ -1,19 +1,19 @@
-import { string } from "prop-types";
-import React from "react";
-import styles from "./InputSelectDuration.module.css";
+import { string } from 'prop-types'
+import React from 'react'
+import styles from './InputSelectDuration.module.css'
 
 function InputSelectDuration() {
-  const yearRange = [1922, 2022];
+  const yearRange = [1922, 2022]
   const generateYears = (yearRange) => {
-    let years = [];
-    let currentYear = yearRange[1];
-    let startYear = yearRange[0];
+    let years = []
+    let currentYear = yearRange[1]
+    let startYear = yearRange[0]
     while (currentYear >= startYear) {
-      let value = currentYear--;
-      years.push(value);
+      let value = currentYear--
+      years.push(value)
     }
-    return years;
-  };
+    return years
+  }
 
   return (
     <>
@@ -45,7 +45,7 @@ function InputSelectDuration() {
         </span>
       </div>
     </>
-  );
+  )
 }
 
-export default InputSelectDuration;
+export default InputSelectDuration

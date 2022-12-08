@@ -5,9 +5,8 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const PACKAGE = require('./package.json')
-const isProduction =
-  process.argv[process.argv.indexOf('--mode') + 1] === 'production'
-  
+const isProduction = process.argv[process.argv.indexOf('--mode') + 1] === 'production'
+
 module.exports = {
   entry: './src/index.js',
   module: {
@@ -38,12 +37,7 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js'],
     alias: {
-      '@linkedinWeb/images': path.resolve(
-        __dirname,
-        'src',
-        'static',
-        'images'
-      ),
+      '@linkedinWeb/images': path.resolve(__dirname, 'src', 'static', 'images'),
       '@linkedinWeb/components': path.resolve(__dirname, 'src', 'components'),
       '@linkedinWeb/utils': path.resolve(__dirname, 'src', 'utils'),
     },
@@ -68,14 +62,12 @@ module.exports = {
       template: path.resolve(__dirname, 'src/static/index.html'),
       APP_ROOT_ID: 'linkedin-clone-web',
       DEFAULT_TITLE: 'Feed | LinkedIn',
-      APP_VERSION: PACKAGE.version
+      APP_VERSION: PACKAGE.version,
     }),
 
     // Copy all Assets, Icons to public Folder.
     new CopyPlugin({
-      patterns: [
-        { from: './src/static/images', to: 'images' },
-      ],
+      patterns: [{ from: './src/static/images', to: 'images' }],
     }),
   ],
   devServer: {

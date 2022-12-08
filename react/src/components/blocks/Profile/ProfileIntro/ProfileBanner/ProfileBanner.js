@@ -9,7 +9,7 @@ function ProfileBanner() {
       <div className={styles.cameraIcon}>
         <CameraIcon />
       </div>
-      <img src={ProfileBackgroundImage} alt="profileBanner"/>
+      <img src={ProfileBackgroundImage} alt="profileBanner" />
     </div>
   )
 }

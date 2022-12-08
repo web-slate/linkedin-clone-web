@@ -1,12 +1,11 @@
+/* TODO: Component CSS Style goes here */
 
-  /* TODO: Component CSS Style goes here */
-  
- .duration {
+.duration {
   display: flex;
   align-items: center;
   justify-content: space-around;
- } 
+}
 
- .w100 {
+.w100 {
   width: 100%;
- }
+}
