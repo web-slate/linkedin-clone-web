@@ -8,7 +8,7 @@ header#main-header > div nav ul {
 }
 
 header#main-header > div nav ul li {
-  color: #c7d1d8;
+  color: rgba(0,0,0,0.6);
   display: inline-block;
   height: 52px;
 }
@@ -27,12 +27,12 @@ header#main-header > div nav ul li div {
 }
 
 header#main-header > div nav ul li div:hover {
-  color: #fff;
+  color: rgba(0,0,0,0.9);
 }
 
 header#main-header > div nav ul li div.selected {
-  border-bottom: solid 2px #fff;
-  color: #fff;
+  border-bottom: solid 2px rgba(0,0,0,0.9);
+  color: rgba(0,0,0,0.9)
 }
 
 header#main-header > div nav ul li div#home {
@@ -67,7 +67,7 @@ header#main-header > div nav ul li div a {
   width: 100px;
   text-align: center;
   padding-bottom: 7px;
-  color: #d3d2a1;
+  color: #915907;
   margin-left: 20px;
   line-height: 1.2;
 }
