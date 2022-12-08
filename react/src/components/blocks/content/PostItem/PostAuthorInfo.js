@@ -1,6 +1,7 @@
 import React from 'react'
 
 function PostAuthourInfo() {
+
   return (
     <>
       <div id="post-author">
@@ -27,6 +28,7 @@ function PostAuthourInfo() {
       </div>
     </>
   )
+
 }
 
 export default PostAuthourInfo
