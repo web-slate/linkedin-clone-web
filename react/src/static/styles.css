@@ -45,11 +45,12 @@ a {
 header#main-header {
   height: 52px;
   position: fixed;
-  background: #283c4a;
+  background: #ffffff transparent;
   width: 100vw;
   display: flex;
   justify-content: center;
   z-index: 1;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
 header#main-header > div {
@@ -580,6 +581,10 @@ main#main-section div#link-box {
   padding: 13px 16px;
   background: #f3f6f8;
   font-size: 14px;
+}
+
+main#main-section div#link-box span {
+  padding: 0 4px 0 0;
 }
 
 main#main-section div#link-box a {

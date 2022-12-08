@@ -1,5 +1,5 @@
 import React from 'react'
-import imageSrc from '../../../../static/images/link-logo.png'
+import imageSrc from '../../../../static/images/logo.svg'
 import profileImg from '../../../../static/images/v.jpeg'
 import './Logo.css'
 

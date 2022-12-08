@@ -1,10 +1,11 @@
 import React from 'react'
-import PostForm from '../PostForm'
-import useGetPostList from '../../../services/hooks/useGetPostList'
 import { FetchView } from 'react-camouflage'
-import PostAuthourInfo from './postAuthorInfo'
-import PostContent from './postContent'
-import PostInteractions from './postInteractions'
+
+import PostForm from '../PostForm'
+import PostAuthourInfo from './PostAuthorInfo'
+import PostContent from './PostContent'
+import PostInteractions from './PostInteractions'
+import useGetPostList from '../../../services/hooks/useGetPostList'
 
 function PostItem() {
   const { isLoading, serverError, postItems } = useGetPostList()
@@ -18,8 +19,7 @@ function PostItem() {
     <>
       <div id="main-wrapper">
         <main id="main-section">
-          <PostForm></PostForm>
-
+          <PostForm />
           <FetchView statusMapping={postListStatusMapping}>
             <FetchView.Fetching>
               <div>Loading...</div>

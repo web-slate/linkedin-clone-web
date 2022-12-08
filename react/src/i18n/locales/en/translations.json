@@ -3,5 +3,8 @@
   "network": "Network",
   "jobs": "Jobs",
   "messaging": "Messaging",
-  "notifications": "Notifications"
+  "notifications": "Notifications",
+  "post_form.post_link": "Start a post",
+  "post_form.write_article": "Write an article",
+  "post_form.on_linkedIn": "on LinkedIn"
 }
