@@ -64,6 +64,7 @@ module.exports = {
     // Take Reference of HTML File.
     new HtmlWebpackPlugin({
       inject: true,
+      favicon: './src/static/favicon.svg',
       template: path.resolve(__dirname, 'src/static/index.html'),
       APP_ROOT_ID: 'linkedin-clone-web',
       DEFAULT_TITLE: 'Feed | LinkedIn',
