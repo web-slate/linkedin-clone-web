@@ -1,6 +1,7 @@
 import React from 'react'
 
 function PostContent() {
+
   return (
     <>
       <div id="post-data">
@@ -15,6 +16,7 @@ function PostContent() {
       </div>
     </>
   )
+
 }
 
 export default PostContent
