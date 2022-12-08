@@ -1,21 +1,28 @@
 import React from 'react'
 
-function PostAuthourInfo() {
+function PostAuthourInfo({
+  authorImageUrl,
+  name,
+  connection,
+  designation,
+  companyName,
+  postedSince
+}) {
   return (
     <>
       <div id="post-author">
         <a href="#">
           <div>
-            <img src="https://avatars.githubusercontent.com/u/16048888?s=96&v=4" alt="" />
+            <img src={authorImageUrl} alt="Author Photograph" />
             <div>
               <div>
-                <strong id="post-author-name">Govindaraj K</strong>
+                <strong id="post-author-name">{name}</strong>
                 <span>
-                  <span>&nbsp;·&nbsp;</span>1st
+                  <span>&nbsp;·&nbsp;</span>{connection}
                 </span>
               </div>
-              <span>Web Developer at Jp Morgan</span>
-              <span>12h</span>
+              <span>{designation} at {companyName}</span>
+              <span>{postedSince}</span>
             </div>
           </div>
         </a>
