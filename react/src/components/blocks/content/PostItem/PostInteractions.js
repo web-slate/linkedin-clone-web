@@ -1,6 +1,7 @@
 import React from 'react'
 
 function PostInteractions() {
+
   return (
     <>
       <div id="post-interactions">
@@ -29,6 +30,7 @@ function PostInteractions() {
       </div>
     </>
   )
+
 }
 
 export default PostInteractions
