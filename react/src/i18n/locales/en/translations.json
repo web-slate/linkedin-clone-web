@@ -5,6 +5,13 @@
   "messaging": "Messaging",
   "notifications": "Notifications",
   "post_form.post_link": "Start a post",
+  "common.loading": "Loading...",
+  "common.top": "Top",
+  "common.sort_by": "Sort by",
   "post_form.write_article": "Write an article",
-  "post_form.on_linkedIn": "on LinkedIn"
+  "post_form.on_linkedIn": "on LinkedIn",
+  "interaction_link.like": "Like",
+  "interaction_link.comment": "Comment",
+  "interaction_link.share": "Share",
+  "post_list.fetch_error": "Sorry, unable to fetch post details"
 }
