@@ -2,9 +2,11 @@ import React from 'react'
 
 // Components.
 import SideBarLeft from '@linkedinWeb/components/blocks/SideBarLeft'
-import PostItems from '@linkedinWeb/components/blocks/content/PostItem'
+import PostForm from '@linkedinWeb/components/blocks/content/PostForm/PostForm'
+import PostItemListHeader from '@linkedinWeb/components/blocks/content/PostItemList/Header'
+import PostItemList from '@linkedinWeb/components/blocks/content/PostItemList'
 
-// Layout
+// Layout.
 import MainLayout from '@linkedinWeb/components/layouts/MainLayout'
 
 function Home() {
@@ -27,7 +29,13 @@ function Home() {
   return (
     <MainLayout>
       <SideBarLeft />
-      <PostItems />
+      <div id="main-wrapper">
+        <main id="main-section">
+          <PostForm />
+          <PostItemListHeader />
+          <PostItemList />
+        </main>
+      </div>
     </MainLayout>
   )
 }
