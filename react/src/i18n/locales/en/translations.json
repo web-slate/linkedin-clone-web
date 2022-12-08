@@ -1,7 +1,7 @@
 {
-   "home" : "Home",
-   "network" : "Network",
-   "jobs" : "Jobs",
-   "messaging" : "Messaging",
-   "notifications" : "Notifications"
+  "home": "Home",
+  "network": "Network",
+  "jobs": "Jobs",
+  "messaging": "Messaging",
+  "notifications": "Notifications"
 }

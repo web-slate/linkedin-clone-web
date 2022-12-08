@@ -4,6 +4,7 @@
   "description": "Linked In Clone Web",
   "scripts": {
     "dev": "webpack serve --mode development",
+    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
     "build": "webpack --mode production --progress",
     "clean": "rm -rf node_modules"
   },
@@ -44,6 +45,7 @@
     "css-loader": "^6.6.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "prettier": "^2.8.1",
     "style-loader": "^3.3.1",
     "webpack": "^5.67.0",
     "webpack-cli": "^4.9.2",

@@ -1,6 +1,5 @@
-
-  /* TODO: Component CSS Style goes here */
-article{
+/* TODO: Component CSS Style goes here */
+article {
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -9,7 +8,7 @@ article{
   width: 803px;
 }
 
-.expHeader{
+.expHeader {
   margin: 1.5rem;
   padding: 1rem;
   display: flex;
@@ -18,6 +17,6 @@ article{
   justify-content: space-between;
 }
 
-.expPlus{
+.expPlus {
   margin-left: 32rem;
 }

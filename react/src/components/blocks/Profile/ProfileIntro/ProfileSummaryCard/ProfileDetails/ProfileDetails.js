@@ -6,7 +6,7 @@ import Link from '@linkedinWeb/components/ui/Link'
 const profileData = {
   name: 'Venkatraman Ramamoorthy',
   title: 'Engineering @ PayPal | Ex-Yahoo, Visa, Target, Proximus',
-  location: 'Singapore'
+  location: 'Singapore',
 }
 
 function ProfileDetails() {
@@ -14,7 +14,12 @@ function ProfileDetails() {
     <div className={styles.profileDetails}>
       <h2>{profileData.name}</h2>
       <p>{profileData.title}</p>
-      <p><span>{profileData.location}</span> <span><Link href="#">Contact Info</Link></span> </p>
+      <p>
+        <span>{profileData.location}</span>{' '}
+        <span>
+          <Link href="#">Contact Info</Link>
+        </span>{' '}
+      </p>
     </div>
   )
 }

@@ -1,8 +1,7 @@
-
-.summaryCard{
+.summaryCard {
   box-shadow: none !important;
   margin-top: -42px;
 }
-.detailsContainer{
+.detailsContainer {
   display: flex;
 }

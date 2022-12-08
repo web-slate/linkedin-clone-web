@@ -36,7 +36,7 @@ const MainLayout = ({ children }) => {
       }
     }, 2000)
   }
-  
+
   useEffect(() => {
     waitPageLoading()
   }, [waitPageLoading])

@@ -1,16 +1,16 @@
-.summaryCardContainer{
+.summaryCardContainer {
   background: #fff;
   box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 2px 3px rgb(0 0 0 / 20%);
   border-radius: 6px;
   width: 803px;
   margin-bottom: 12px;
 }
-.summaryCardHeader{
+.summaryCardHeader {
   display: flex;
   justify-content: space-between;
   padding: 1.2rem;
   padding-bottom: 0;
 }
-.summaryCardContent{
- padding: 1.2rem;
+.summaryCardContent {
+  padding: 1.2rem;
 }

@@ -7,11 +7,14 @@ import CompanyAndEductionLinks from './CompanyAndEducationLinks'
 import EditIcon from '@linkedinWeb/components/ui/Icons/EditIcon'
 
 function ProfileSummaryCard() {
-
-  const actions = [{
-    icon: 'editIcon',
-    onClick: () => { alert('open edit modal'); }
-  }]
+  const actions = [
+    {
+      icon: 'editIcon',
+      onClick: () => {
+        alert('open edit modal')
+      },
+    },
+  ]
 
   return (
     <SummaryCard title="" containerClassName={styles.summaryCard} actions={actions}>

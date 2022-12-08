@@ -1,4 +1,3 @@
-
 import React from 'react'
 import FooterLinks from '../FooterLinks/FooterLinks'
 
@@ -13,16 +12,13 @@ function ProfileLViewers() {
             <div>
               <img src="https://avatars.githubusercontent.com/u/3478542?v=4" alt="" />
             </div>
-            <strong>
-              See who's viewed your profile in the last 90
-              days
-            </strong>
+            <strong>See who's viewed your profile in the last 90 days</strong>
             <div>
               <button>Try for free</button>
             </div>
           </a>
         </section>
-        <FooterLinks/>
+        <FooterLinks />
       </div>
     </>
   )
