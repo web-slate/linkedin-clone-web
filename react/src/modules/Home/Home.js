@@ -1,13 +1,13 @@
 import React from 'react'
 
 // Components.
-import SideBarLeft from '@linkedinWeb/components/blocks/SideBarLeft'
-import PostForm from '@linkedinWeb/components/blocks/content/PostForm/PostForm'
-import PostItemListHeader from '@linkedinWeb/components/blocks/content/PostItemList/Header'
-import PostItemList from '@linkedinWeb/components/blocks/content/PostItemList'
+import SideBarLeft from '@/components/blocks/SideBarLeft'
+import PostForm from '@/components/blocks/content/PostForm/PostForm'
+import PostItemListHeader from '@/components/blocks/content/PostItemList/Header'
+import PostItemList from '@/components/blocks/content/PostItemList'
 
 // Layout.
-import MainLayout from '@linkedinWeb/components/layouts/MainLayout'
+import MainLayout from '@/components/layouts/MainLayout'
 
 function Home() {
   window.addEventListener('scroll', (e) => {
