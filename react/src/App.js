@@ -5,7 +5,7 @@ import { createBrowserHistory } from 'history'
 import Routes from './Routes'
 
 // Components.
-import { ErrorHandler } from '@linkedinWeb/components'
+import { ErrorHandler } from '@/components'
 
 const browserHistory = createBrowserHistory()
 
