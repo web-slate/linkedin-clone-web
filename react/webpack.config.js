@@ -37,9 +37,9 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js'],
     alias: {
-      '@linkedinWeb/images': path.resolve(__dirname, 'src', 'static', 'images'),
-      '@linkedinWeb/components': path.resolve(__dirname, 'src', 'components'),
-      '@linkedinWeb/utils': path.resolve(__dirname, 'src', 'utils'),
+      '@/images': path.resolve(__dirname, 'src', 'static', 'images'),
+      '@/components': path.resolve(__dirname, 'src', 'components'),
+      '@/utils': path.resolve(__dirname, 'src', 'utils'),
     },
   },
   output: {
