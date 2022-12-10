@@ -16,6 +16,7 @@ module.exports = {
     alias: {
       ...IMAGE_ALIAS,
       ...COMPONENT_ALIAS,
+      ...HOOKS_ALIAS,
       ...UTIL_ALIAS,
     },
   },
