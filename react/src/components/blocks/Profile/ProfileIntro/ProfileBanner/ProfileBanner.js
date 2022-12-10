@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './ProfileBanner.module.css'
-import ProfileBackgroundImage from '@linkedinWeb/images/profile_bg.svg'
-import CameraIcon from '@linkedinWeb/components/ui/Icons/CameraIcon'
+import ProfileBackgroundImage from '@/images/profile_bg.svg'
+import CameraIcon from '@/components/ui/Icons/CameraIcon'
 
 function ProfileBanner() {
   return (
