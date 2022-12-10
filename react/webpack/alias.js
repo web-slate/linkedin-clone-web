@@ -4,7 +4,8 @@ const SOURCE_DIR = 'src'
 const STATIC_DIR = 'static'
 const IMAGE_DIR = 'images'
 const COMPONENT_DIR = 'components'
-const HOOKS_DIR = 'services/hooks'
+const SERVICES_DIR = 'services'
+const HOOKS_DIR = 'hooks'
 const UTIL_DIR = 'utils'
 
 const STATIC_ALIAS = {
@@ -20,7 +21,7 @@ const COMPONENT_ALIAS = {
 }
 
 const HOOKS_ALIAS = {
-  '@/hooks': path.resolve(__dirname, '..', SOURCE_DIR, HOOKS_DIR),
+  '@/hooks': path.resolve(__dirname, '..', SOURCE_DIR, COMPONENT_DIR, SERVICES_DIR, HOOKS_DIR),
 }
 
 const UTIL_ALIAS = {
