@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
 
 // Components
-import { ErrorHandler } from '@linkedinWeb/components'
-import Spinner from '@linkedinWeb/components/common/Spinner/Spinner'
-import Header from '@linkedinWeb/components/blocks/Header'
-import SubHeaderAd from '@linkedinWeb/components/blocks/Header/SubHeaderAd'
-import SideBarRight from '@linkedinWeb/components/blocks/SideBarRight'
+import { ErrorHandler } from '@/components'
+import Spinner from '@/components/common/Spinner/Spinner'
+import Header from '@/components/blocks/Header'
+import SubHeaderAd from '@/components/blocks/Header/SubHeaderAd'
+import SideBarRight from '@/components/blocks/SideBarRight'
 
 const MainLayout = ({ children }) => {
   function waitPageLoading() {
