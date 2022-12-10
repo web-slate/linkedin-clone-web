@@ -3,23 +3,23 @@ import { Route, Routes } from 'react-router-dom'
 import Spinner from '@/components/common/Spinner/Spinner'
 import RoutePaths from '@/utils/route-paths'
 
-const HomeModule = React.lazy(() => import(/* webpackChunkName: "modules/Home" */ './modules/Home'))
+const HomePage = React.lazy(() => import(/* webpackChunkName: "pages/Home" */ './pages/Home'))
 
-const ProfileModule = React.lazy(() =>
-  import(/* webpackChunkName: "modules/Profile" */ './modules/Profile')
+const ProfilePage = React.lazy(() =>
+  import(/* webpackChunkName: "pages/Profile" */ './pages/Profile')
 )
 
-const NotFoundModule = React.lazy(() =>
-  import(/* webpackChunkName: "modules/NotFound" */ './modules/NotFound')
+const NotFoundPage = React.lazy(() =>
+  import(/* webpackChunkName: "pages/NotFound" */ './pages/NotFound')
 )
 
 const RoutesComponent = () => {
   return (
     <Suspense fallback={<Spinner />}>
       <Routes>
-        <Route path={RoutePaths.Home} exact element={<HomeModule />} />
-        <Route path={RoutePaths.Profile} exact element={<ProfileModule />} />
-        <Route path="*" element={<NotFoundModule />} />
+        <Route path={RoutePaths.Home} exact element={<HomePage />} />
+        <Route path={RoutePaths.Profile} exact element={<ProfilePage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Suspense>
   )
