@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './ProfileImage.module.css'
-import ProfileImg from '@linkedinWeb/images/v.jpeg'
+import ProfileImg from '@/images/v.jpeg'
 
 function ProfileImage() {
   return (

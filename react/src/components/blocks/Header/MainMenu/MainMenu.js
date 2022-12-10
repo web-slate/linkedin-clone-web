@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import imageSrc from '../../../../static/images/v.jpeg'
 import { useTranslation } from 'react-i18next'
 import './MainMenu.css'
-import RoutePaths from '@linkedinWeb/utils/route-paths'
+import RoutePaths from '@/utils/route-paths'
 
 function MainMenu() {
   const { t } = useTranslation()

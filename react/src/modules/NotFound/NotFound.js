@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import RoutePaths from '@linkedinWeb/utils/route-paths'
+import RoutePaths from '@/utils/route-paths'
 
 const NotFound = () => {
   const navigate = useNavigate()

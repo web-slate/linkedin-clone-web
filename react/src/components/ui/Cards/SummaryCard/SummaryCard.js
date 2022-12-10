@@ -1,6 +1,6 @@
 import React from 'react'
-import EditIcon from '@linkedinWeb/components/ui/Icons/EditIcon'
-import AddIcon from '@linkedinWeb/components/ui/Icons/AddIcon'
+import EditIcon from '@/components/ui/Icons/EditIcon'
+import AddIcon from '@/components/ui/Icons/AddIcon'
 import styles from './SummaryCard.module.css'
 
 function SummaryCard({ title, children, containerClassName, actions = [] }) {

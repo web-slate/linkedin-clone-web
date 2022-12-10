@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Spinner from '@linkedinWeb/components/common/Spinner/Spinner'
-import RoutePaths from '@linkedinWeb/utils/route-paths'
+import Spinner from '@/components/common/Spinner/Spinner'
+import RoutePaths from '@/utils/route-paths'
 
 const HomeModule = React.lazy(() => import(/* webpackChunkName: "modules/Home" */ './modules/Home'))
 
