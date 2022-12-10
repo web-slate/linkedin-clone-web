@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "webpack serve --mode development --config=webpack/config.js",
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
-    "build": "webpack --mode production --progress",
+    "build": "webpack --mode production --progress --config=webpack/config.js",
     "clean": "rm -rf node_modules"
   },
   "repository": {
