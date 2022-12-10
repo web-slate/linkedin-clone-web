@@ -20,7 +20,7 @@ const COMPONENT_ALIAS = {
 }
 
 const HOOKS_ALIAS = {
-  '@/components': path.resolve(__dirname, '..', SOURCE_DIR, HOOKS_DIR),
+  '@/hooks': path.resolve(__dirname, '..', SOURCE_DIR, HOOKS_DIR),
 }
 
 const UTIL_ALIAS = {
