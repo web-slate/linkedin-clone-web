@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from './ProfileSummaryCard.module.css'
-import SummaryCard from '@linkedinWeb/components/ui/Cards/SummaryCard/SummaryCard'
+import SummaryCard from '@/components/ui/Cards/SummaryCard/SummaryCard'
 import ProfileDetails from './ProfileDetails'
 import ProfileLinks from './ProfileLinks'
 import CompanyAndEductionLinks from './CompanyAndEducationLinks'
-import EditIcon from '@linkedinWeb/components/ui/Icons/EditIcon'
+import EditIcon from '@/components/ui/Icons/EditIcon'
 
 function ProfileSummaryCard() {
   const actions = [
