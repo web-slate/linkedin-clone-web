@@ -9,5 +9,13 @@
         }
       ],
       "@babel/preset-react"
+    ],
+    "plugins": [
+      [
+        "@locator/babel-jsx/dist",
+        {
+          "env": "development"
+        }
+      ]
     ]
 }
