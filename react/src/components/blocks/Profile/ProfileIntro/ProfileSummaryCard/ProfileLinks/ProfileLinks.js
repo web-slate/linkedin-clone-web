@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './ProfileLinks.module.css'
-import PrimaryButton from '@linkedinWeb/components/ui/Fields/Buttons/PrimaryButton'
-import OutlinedButton from '@linkedinWeb/components/ui/Fields/Buttons/OutlinedButton'
-import SecondaryButton from '@linkedinWeb/components/ui/Fields/Buttons/SecondaryButton'
+import PrimaryButton from '@/components/ui/Fields/Buttons/PrimaryButton'
+import OutlinedButton from '@/components/ui/Fields/Buttons/OutlinedButton'
+import SecondaryButton from '@/components/ui/Fields/Buttons/SecondaryButton'
 
 function ProfileLinks() {
   return (
