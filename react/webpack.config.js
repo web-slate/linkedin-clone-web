@@ -4,42 +4,82 @@ const path = require('path')
 // WebPack Plugins.
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+
 const PACKAGE = require('./package.json')
 const isProduction = process.argv[process.argv.indexOf('--mode') + 1] === 'production'
+
+const CSS_LOADER = {
+  test: /\.css$/,
+  use: ['style-loader', 'css-loader'],
+}
+
+const JS_LOADER = {
+  test: /.(js)$/,
+  exclude: [/node_modules/],
+  use: ['babel-loader'],
+}
+
+const SVEG_LOADER = {
+  test: /.svg$/,
+  use: ['@svgr/webpack', 'file-loader'],
+}
+
+const FILE_LOADER = {
+  test: /.(png|jpe?g|gif)$/i,
+  use: [
+    {
+      loader: 'file-loader',
+    },
+  ],
+}
+
+const IMAGE_ALIAS = {
+  '@/images': path.resolve(__dirname, 'src', 'static', 'images'),
+}
+
+const COMPONENT_ALIAS = {
+  '@/components': path.resolve(__dirname, 'src', 'components'),
+}
+
+const UTIL_ALIAS = {
+  '@/utils': path.resolve(__dirname, 'src', 'utils'),
+}
+
+const HOT_MODULE_PLUGIN = new webpack.HotModuleReplacementPlugin()
+
+const ENVIRONMENT_PLUGIN = new webpack.EnvironmentPlugin({
+  VERSION: PACKAGE.version,
+})
+
+const HTML_PLUGIN = new HtmlWebpackPlugin({
+  inject: true,
+  favicon: './src/static/favicon.svg',
+  template: path.resolve(__dirname, 'src/static/index.html'),
+  APP_ROOT_ID: 'linkedin-clone-web',
+  DEFAULT_TITLE: 'Feed | LinkedIn',
+  APP_VERSION: PACKAGE.version,
+})
+
+const COPY_PLUGIN = new CopyPlugin({
+  patterns: [{ from: './src/static/images', to: 'images' }],
+})
 
 module.exports = {
   entry: './src/index.js',
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /.(js)$/,
-        exclude: [/node_modules/],
-        use: ['babel-loader'],
-      },
-      {
-        test: /.svg$/,
-        use: ['@svgr/webpack', 'file-loader'],
-      },
-      {
-        test: /.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
-      },
+      CSS_LOADER,
+      JS_LOADER,
+      SVEG_LOADER,
+      FILE_LOADER,
     ],
   },
   resolve: {
     extensions: ['*', '.js'],
     alias: {
-      '@/images': path.resolve(__dirname, 'src', 'static', 'images'),
-      '@/components': path.resolve(__dirname, 'src', 'components'),
-      '@/utils': path.resolve(__dirname, 'src', 'utils'),
+      ...IMAGE_ALIAS,
+      ...COMPONENT_ALIAS,
+      ...UTIL_ALIAS,
     },
   },
   output: {
@@ -49,26 +89,10 @@ module.exports = {
     chunkFilename: '[name].js',
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-
-    new webpack.EnvironmentPlugin({
-      VERSION: PACKAGE.version,
-    }),
-
-    // Take Reference of HTML File.
-    new HtmlWebpackPlugin({
-      inject: true,
-      favicon: './src/static/favicon.svg',
-      template: path.resolve(__dirname, 'src/static/index.html'),
-      APP_ROOT_ID: 'linkedin-clone-web',
-      DEFAULT_TITLE: 'Feed | LinkedIn',
-      APP_VERSION: PACKAGE.version,
-    }),
-
-    // Copy all Assets, Icons to public Folder.
-    new CopyPlugin({
-      patterns: [{ from: './src/static/images', to: 'images' }],
-    }),
+    HOT_MODULE_PLUGIN,
+    ENVIRONMENT_PLUGIN,
+    HTML_PLUGIN,
+    COPY_PLUGIN,
   ],
   devServer: {
     open: ['/linkedin-clone-web/react'],
