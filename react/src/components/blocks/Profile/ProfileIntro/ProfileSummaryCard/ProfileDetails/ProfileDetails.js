@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './ProfileDetails.module.css'
-import Link from '@linkedinWeb/components/ui/Link'
+import Link from '@/components/ui/Link'
 
 // FIXME: Remove harcoded values
 const profileData = {
