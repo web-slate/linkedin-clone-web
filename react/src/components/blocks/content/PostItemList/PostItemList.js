@@ -3,7 +3,7 @@ import { FetchView } from 'react-camouflage'
 import { useTranslation } from 'react-i18next'
 
 import PostItem from '../PostItem'
-import useGetPostList from '../../../services/hooks/useGetPostList'
+import useGetPostList from '@/hooks/useGetPostList'
 
 function PostItemList() {
   const { t } = useTranslation()
